@@ -2,6 +2,7 @@ require "application_system_test_case"
 
 class ArticlesTest < ApplicationSystemTestCase
   setup do
+    @user = users(:one)
     @article = articles(:one)
   end
 
@@ -15,30 +16,17 @@ class ArticlesTest < ApplicationSystemTestCase
     assert_selector "h1", text: "Articles"
   end
 
-  test "should create article" do
+  test "should not create article" do
     visit articles_url
     click_on "New article"
 
-    click_on "Create Article"
-
-    assert_text "Article was successfully created"
-    click_on "Back"
+    assert_text "HTTP Basic: Access denied."
   end
 
-  test "should update Article" do
+  test "should not update Article" do
     visit article_url(@article)
-    click_on "Edit this article", match: :first
+    click_on "Edit this article"
 
-    click_on "Update Article"
-
-    assert_text "Article was successfully updated"
-    click_on "Back"
-  end
-
-  test "should destroy Article" do
-    visit article_url(@article)
-    click_on "Destroy this article", match: :first
-
-    assert_text "Article was successfully destroyed"
+    assert_text "HTTP Basic: Access denied."
   end
 end

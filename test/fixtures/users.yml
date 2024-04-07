@@ -4,14 +4,12 @@
 # model remove the "{}" from the fixture names and add the columns immediately
 # below each fixture, per the syntax in the comments below
 #
-one: 
-  title: Some title
-  subtitle: Some subtitle
-  content: Some body
-  user_id: 1
+one:
+  id: 1
+  username: user1
+  password_digest: $2a$04$bvF5EpvuCYJZkMzjH9ArZu9kSipL.FlYcN3J2TH7s7VTf.3wg3bSK
 
 two:
-  title: Another title
-  subtitle: Another subtitle
-  content: Another body
-  user_id: 2
+  id: 2
+  username: user2
+  password_digest: $2a$04$bvF5EpvuCYJZkMzjH9ArZu9kSipL.FlYcN3J2TH7s7VTf.3wg3bSK
