@@ -9,6 +9,9 @@ class ArticlesTest < ApplicationSystemTestCase
   test "visiting the root page" do
     visit root_url
     assert_selector "h1", text: "Articles"
+
+    assert_text "Article 1"
+    assert_no_text "Article 2"
   end
 
   test "visiting the index" do
