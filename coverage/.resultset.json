@@ -315,6 +315,28 @@
           null,
           1,
           1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/joaotenorio/Projects/JohnPolarExpress/johnstation/test/models/tag_article_test.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/joaotenorio/Projects/JohnPolarExpress/johnstation/test/models/tag_test.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
           null
         ]
       },
@@ -388,11 +410,29 @@
         "lines": [
           1,
           1,
+          1,
+          1,
           null
         ]
       },
       "/Users/joaotenorio/Projects/JohnPolarExpress/johnstation/app/models/application_record.rb": {
         "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/joaotenorio/Projects/JohnPolarExpress/johnstation/app/models/tag_article.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/joaotenorio/Projects/JohnPolarExpress/johnstation/app/models/tag.rb": {
+        "lines": [
+          1,
           1,
           1,
           null
@@ -507,6 +547,6 @@
         ]
       }
     },
-    "timestamp": 1712624947
+    "timestamp": 1712626280
   }
 }
