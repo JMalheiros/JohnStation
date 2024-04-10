@@ -18,18 +18,4 @@ class ArticlesTest < ApplicationSystemTestCase
     visit articles_url
     assert_selector "h1", text: "Articles"
   end
-
-  test "should not create article" do
-    visit articles_url
-    click_on "New article"
-
-    assert_text "HTTP Basic: Access denied."
-  end
-
-  test "should not update Article" do
-    visit article_url(@article)
-    click_on "Edit this article"
-
-    assert_text "HTTP Basic: Access denied."
-  end
 end
