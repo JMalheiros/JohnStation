@@ -1,0 +1,7 @@
+<div id="<%= dom_id article %>">
+  <h2><%= article.title %></h2>
+  <h3><%= article.subtitle %></h3>
+  <p><%= article.content %></p>
+  <p><%= link_to 'Edit', edit_logged_in_article_path(article) %></p>
+  <p><%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+</div>
